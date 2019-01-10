@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="hr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Moj portfolio</title>
+        <link rel="stylesheet" href="tekst.css">        
+         <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
+		<link rel="stylesheet" href="bootstrap/bootstrap.min.css">		
+		<link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+		<link rel="stylesheet" href="lightbox/css/lightbox.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="container-fluid">			
+			<!-- ************** Zaglavlje / početak ************** -->
+			<div class="row zaglavlje">
+				<div class="col">
+					<a href="index.html">Moj portfolio</a>
+					<p>Salix Art</p>
+				</div>
+			</div>
+            </div>
+			<!-- ************** Zaglavlje / kraj ************** -->
+			
+			<!-- ************** Navigacija / početak ************** -->
+			<div class="row navigacija">
+				<div class="col">
+					
+				<nav class="shift">
+                <div class="hamburger">
+						<span style="font-size:30px;cursor:pointer" onclick="openNav()"> <span class="fas fa-bars"></span></span>
+					</div>
+    				<ul>
+      				<li><a href="index.html">Početna</a></li>
+      				<li><a href="o_meni.html">O meni</a></li>
+      				<li><a href="moji_radovi.html">Moji radovi</a></li>
+      				<li><a href="kontakt.html">Kontakt</a></li>
+    				</ul>
+  				</nav>
+				</div>
+            </div>
+            
+            <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  			<div class="overlay-content">
+            <p>Salix Art</p>
+    			<a href="index.html">Početna</a>
+   				<a href="o_meni.html">O meni</a>
+    			<a href="moji_radovi.html">Moji radovi</a>
+    			<a href="kontakt.html">Kontakt</a>
+             <p class="linija">
+                 <img src="slike/facebook.png" width="50" height="50">
+                 <img src="slike/instagram.png" width="50" height="50">
+                 <img src="slike/whatsapp.png" width="50" height="50">
+                 <img src="slike/twitter.png" width="50" height="50">
+            </p>
+  			</div>
+		</div>
+
+
+
+
+			<!-- ************** Navigacija / kraj ************** -->
+
+			<!-- ************** Carousel / početak ************** -->
+            <div class="container">
+			<div class="row slider">
+				<div class="col">
+					<div id="carouselIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<!-- ************** Indikatori / početak ************** -->
+							<li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselIndicators" data-slide-to="3"></li>
+							<li data-target="#carouselIndicators" data-slide-to="4"></li>
+                            <li data-target="#carouselIndicators" data-slide-to="5"></li>
+							
+							<!-- ************** Indikatori / kraj ************** -->
+						</ol>
+						<div class="carousel-inner">
+							<!-- ************** Slideovi / početak ************** -->
+							<div class="carousel-item active">
+								<img class="d-block w-100" src="slike/video2-slider.jpg" alt="Prvi slide">
+								<div class="carousel-caption d-none d-md-block">
+									<h2>Black Flag</h2>
+									<p>After effects video "camera flow-3D"</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="slike/video3-slider.jpg" alt="Drugi slide">
+								<div class="carousel-caption d-none d-md-block">
+									<h2>Vjenčanje</h2>
+									<p>Video montaža vjenčanja</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="slike/video-slider.jpg" alt="Treći slide">
+								<div class="carousel-caption d-none d-md-block">
+									<h2>Čarobno krštenje</h2>
+									<p>After effect intro video plus montaža</p>
+								</div>
+							</div>	
+                            <div class="carousel-item">
+								<img class="d-block w-100" src="slike/cestitka-slider.jpg" alt="Treći slide">
+								<div class="carousel-caption d-none d-md-block">
+									<h2>AC DC bDay</h2>
+									<p>Rođendanska čestitka u stilu AC DC</p>
+								</div>
+							</div>	
+                            <div class="carousel-item">
+								<img class="d-block w-100" src="slike/cestitka (2)-slider.jpg" alt="Treći slide">
+								<div class="carousel-caption d-none d-md-block">
+									<h2>Čestitka </h2>
+									<p>Prva rođendanska čestitka</p>
+								</div>
+							</div>	
+                            <div class="carousel-item">
+								<img class="d-block w-100" src="slike/web-slider.jpg" alt="Treći slide">
+								<div class="carousel-caption d-none d-md-block">
+									<h2>Martinezovi podrumi</h2>
+									<p>Web stranica za Martinezove podrume</p>
+								</div>
+							</div>							
+							<!-- ************** Slideovi / kraj ************** -->
+						</div>
+						<a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>						
+						</a>
+						<a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>						
+						</a>
+					</div>
+				</div>
+			</div>
+            
+            
+			<!-- ************** Carousel / kraj ************** -->
+
+			<!-- ************** Galerija / početak ************** -->
+			<div class="row galerija">
+				<div class="col-12">
+					<h1>Izdvojeni radovi</h1>
+				</div>
+				
+				<!-- ************** Prva slika / početak ************** -->
+				<div class="col-12 col-md-6 slika">
+					<div class="maska">
+						<p>
+							<a href="slike/cestitka2-velika.jpg" data-lightbox="galerija" class="naziv-rada">Personalizirane rođendaske čestitke</a>
+							
+						</p>
+					</div>
+					<img src="slike/cestitka2-mala.jpg" class="img-fluid">
+				</div>
+				<!-- ************** Prva slika / kraj ************** -->
+				
+				<!-- ************** Druga slika / početak ************** -->
+				<div class="col-12 col-md-6 slika">
+					<div class="maska">
+						<p>
+							<a href="slike/video-velika.jpg" data-lightbox="galerija" class="naziv-rada">Intro video klipovi i montaža</a>
+													
+						</p>
+					</div>
+					<img src="slike/video-mala.jpg" class="img-fluid">
+				</div>
+				<!-- ************** Druga slika / kraj ************** -->
+				
+				<!-- ************** Treća slika / početak ************** -->
+				<div class="col-12 col-md-6 slika">
+					<div class="maska">
+						<p>
+							<a href="slike/web-velika.jpg" data-lightbox="galerija" class="naziv-rada">Web dizajn</a>
+						</p>
+					</div>
+					<img src="slike/web-mala.jpg" class="img-fluid">
+				</div>
+				<!-- ************** Treća slika / kraj ************** -->
+				
+				
+				<!-- ************** Četvrta slika / početak ************** -->
+				<div class="col-12 col-md-6 slika">
+					<div class="maska">
+						<p>
+							<a href="slike/watermark-velika.jpg" data-lightbox="galerija" class="naziv-rada">Izrada logotipa i plakata</a>
+						</p>
+					</div>
+					<img src="slike/watermark-mala.jpg" class="img-fluid">
+				</div>
+				<!-- ************** Četvrta slika / kraj ************** -->
+				
+			</div>
+			<!-- ************** Galerija / kraj ************** -->
+			
+		
+		
+			<!-- ************** Footer / početak ************** -->
+            </div>
+            
+            <div class="container-fluid">
+			<div class="row footer">
+				<div class="col">
+					<div class="footer-content">
+						<ul>
+							<li><a href="index.html"><img src="slike/facebook.png" ></a></li>
+							<li><a href="o_meni.html"><img src="slike/instagram.png" ></a></li>
+							<li><a href="moji_radovi.html"><img src="slike/whatsapp.png" ></a></li>
+							<li><a href="kontakt.html"><img src="slike/twitter.png" ></a></li>
+						</ul>
+						<p>Izradio/la: Ivan Vrbanek (Salix)  2019.</p>
+					</div>
+				</div>
+			</div>
+			<!-- ************** Footer / kraj ************** -->
+		</div>
+		<script src="bootstrap/jquery.min.js"></script>
+		<script src="bootstrap/popper.min.js"></script>
+		<script src="bootstrap/bootstrap.min.js"></script>
+		<script src="lightbox/js/lightbox.js"></script>
+        <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+function initQuoteCarousel() {
+
+    var $quotesWrapper = $(".cust-quotes");
+    var $quotes = $quotesWrapper.find("blockquote");
+
+    if (!$quotes.length) {
+        return;
+    }
+
+    var selectNextQuote = function () {
+        // keep move first quote in dom to the end to make continous
+        var $quote = $quotesWrapper.find("blockquote:first").detach().appendTo($quotesWrapper);
+
+        setTimeout(selectNextQuote, $quote.data("timeout"));
+    };
+
+    setTimeout(selectNextQuote, $quotes.filter(":first").data("timeout"));
+
+}
+
+$(function () {
+    initQuoteCarousel();
+});
+</script>
+	</body>
+</html>
