@@ -276,7 +276,7 @@ body {
 
 /* ------ Kontakt / početak ------ */
 .kontakt {
-	background-image:url(slike/kontakt.jpg);
+	background-color:#172c42;
 	background-size: cover;
 	box-shadow: rgba(0,0,0,1);
 	padding: 50px 30px;
@@ -479,17 +479,17 @@ body {
 	height: 250px;
 }
 .social-profile.svijetlo-siva {
-	background-color: #F0F0F0;
+	background-color: #FFF;
 }
 .social-profile.tamno-siva {
-	background-color: #E0E0E0;
+	background-color: ##FFF;
 }
 @media screen and (max-width:767px) {
 	.social-profile:nth-child(odd) {
-		background-color: #F0F0F0;
+		background-color: ##FFF;
 	}
 	.social-profile:nth-child(even) {
-		background-color: #E0E0E0;
+		background-color: ##FFF;
 	}
 }
 .social-profile p {
@@ -545,3 +545,10 @@ text-align:center;
 line-height:20px;
 }
 
+/* Text decoration */
+
+.contact-tekst {
+	font-family: 'Roboto', sans-serif;
+	font-size:24px;
+	text-align:center;
+}

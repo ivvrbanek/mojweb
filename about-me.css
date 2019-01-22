@@ -1,0 +1,109 @@
+
+
+// Var
+$green-darken: #366;
+$green-lighten: #4dbd94;
+$Montserrat : 'Montserrat', sans-serif;
+// Reset
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+  background: #FFF;
+}
+// About Section
+.about-me{
+	width: 360px;
+	margin:40px auto;
+	.about-btn{
+			height: 52px;
+			background-color: $green-lighten;
+			overflow: hidden;
+			position: relative;
+		h3{
+			display: inline-block;
+			margin-left: 60%;
+			font-family: $Montserrat;
+			line-height: 52px;
+			color: $green-darken;
+		}
+		> i {
+		padding: 10px;
+		color: $green-darken;
+			}
+		.circle{
+			width: 47px;
+			height: 47px;
+			background:#FFF;
+			border-radius:50%; 
+			position: absolute;
+			top: 2.5px;
+			left: -35px;
+		}	
+		}
+	.about{
+		width: 360px;
+		height: 522px;
+		background-color: $green-darken;
+		text-align: center;
+		box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2);
+		position: relative;
+		overflow: hidden;
+	h3::after{
+			content: '';
+			display: block;
+			width: 100%;
+			height: 1px;
+			background:$green-lighten;
+			position: absolute;
+			top: 94px;
+				}
+		.avatar{
+		border-radius: 50%;
+		margin: 24px;
+		z-index: 100;
+		position: relative;
+		box-shadow: 0px 0px 70px 30px $green-darken;
+		}
+		h3{
+		font-family: $Montserrat;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 48px;
+		color: #FFF;
+		}
+		p{
+			font-family: $Montserrat;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 24px;
+			color: #FFF;
+			text-align: left;
+			margin: 0 20px 10px 20px;
+		}
+		.social-btn{
+			a{
+			display: inline-block;
+			width: calc(360px/3);
+			height: 72px;
+			margin-right: -4px;
+			line-height: 72px;
+			text-decoration: none;
+			font-size: 20px;
+			color: #FFF;
+			}
+			:first-child{
+				background:#336699;
+			}
+			:nth-child(2){
+				background:#f1f1f1;
+				color: #000;
+			 }
+			:last-child{
+			background:#5ea9dd;
+			margin-right: 0px;
+			}
+		}
+	}	
+}

@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Moj portfolio</title>
-        <link rel="stylesheet" href="tekst.css">        
+        <link rel="stylesheet" href="tekst.css">    
          <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
 		<link rel="stylesheet" href="bootstrap/bootstrap.min.css">		
 		<link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
@@ -135,11 +135,48 @@
 					</div>
 				</div>
 			</div>
+            </div>
             
-            
+            <div class="container-fluid">
+       <div class="sectiontitle">
+    <h2>Projects statistics</h2>
+    <span class="headerLine"></span>
+</div>
+<div id="projectFacts" class="sectionClass">
+    <div class="fullWidth eight columns">
+        <div class="projectFactsWrap ">
+            <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;">
+                <i class="fa fa-briefcase"></i>
+                <p id="number1" class="number">19</p>
+                <span></span>
+                <p>Projects done</p>
+            </div>
+            <div class="item wow fadeInUpBig animated animated" data-number="55" style="visibility: visible;">
+                <i class="fa fa-smile"></i>
+                <p id="number2" class="number">40</p>
+                <span></span>
+                <p>Happy clients</p>
+            </div>
+            <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;">
+                <i class="fa fa-coffee"></i>
+                <p id="number3" class="number">153</p>
+                <span></span>
+                <p>Cups of coffee</p>
+            </div>
+            <div class="item wow fadeInUpBig animated animated" data-number="246" style="visibility: visible;">
+                <i class="fa fa-film"></i>
+                <p id="number4" class="number">8</p>
+                <span></span>
+                <p>Movies made</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>        
 			<!-- ************** Carousel / kraj ************** -->
 
 			<!-- ************** Galerija / početak ************** -->
+            <div class="container">
 			<div class="row galerija">
 				<div class="col-12">
 					<h1>Izdvojeni radovi</h1>
@@ -199,7 +236,7 @@
 		
 			<!-- ************** Footer / početak ************** -->
             </div>
-            
+            </div>
             <div class="container-fluid">
 			<div class="row footer">
 				<div class="col">
@@ -252,6 +289,46 @@ function initQuoteCarousel() {
 $(function () {
     initQuoteCarousel();
 });
+
+
+
+$.fn.jQuerySimpleCounter = function( options ) {
+	    var settings = $.extend({
+	        start:  0,
+	        end:    100,
+	        easing: 'swing',
+	        duration: 400,
+	        complete: ''
+	    }, options );
+
+	    var thisElement = $(this);
+
+	    $({count: settings.start}).animate({count: settings.end}, {
+			duration: settings.duration,
+			easing: settings.easing,
+			step: function() {
+				var mathCount = Math.ceil(this.count);
+				thisElement.text(mathCount);
+			},
+			complete: settings.complete
+		});
+	};
+
+
+$('#number1').jQuerySimpleCounter({end: 19,duration: 3000});
+$('#number2').jQuerySimpleCounter({end: 40,duration: 3000});
+$('#number3').jQuerySimpleCounter({end: 153,duration: 2000});
+$('#number4').jQuerySimpleCounter({end: 8,duration: 3000});
+
+
+
+  	/* AUTHOR LINK */
+     $('.about-me-img').hover(function(){
+            $('.authorWindowWrapper').stop().fadeIn('fast').find('p').addClass('trans');
+        }, function(){
+            $('.authorWindowWrapper').stop().fadeOut('fast').find('p').removeClass('trans');
+        });
+  
 </script>
 	</body>
 </html>
